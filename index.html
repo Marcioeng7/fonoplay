@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FonoPlay - Treino de Fala Infantil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🗣️ FonoPlay</div>
+        <div class="placar">⭐ <span id="total-estrelas">0</span></div>
+    </header>
+
+    <!-- TELA 1: MENU DE FONEMAS -->
+    <main id="tela-menu" class="container">
+        <h2>Escolha o som para treinar</h2>
+        <p class="subtitulo">Selecione o grupo de exercícios indicado pelo fonoaudiólogo:</p>
+        
+        <div class="grid-fonemas">
+            <button class="btn-fonema" onclick="iniciarTreino('R')">
+                Som do R <span>Rato, Arara, Robô</span>
+            </button>
+            <button class="btn-fonema verde" onclick="iniciarTreino('L')">
+                Som do L <span>Leão, Bola, Lua</span>
+            </button>
+            <button class="btn-fonema laranja" onclick="iniciarTreino('S')">
+                Som do S <span>Sapo, Sol, Sorvete</span>
+            </button>
+            <button class="btn-fonema roxo" onclick="iniciarTreino('TR')">
+                Encontros (TR/PR) <span>Trem, Prato, Estrela</span>
+            </button>
+        </div>
+
+        <button class="btn-voltar" onclick="zerarProgresso()">Zerar estrelas salvas</button>
+    </main>
+
+    <!-- TELA 2: ÁREA DO EXERCÍCIO -->
+    <section id="tela-jogo" class="container oculto">
+        <p class="subtitulo" id="progresso-texto">Palavra 1 de 3</p>
+        
+        <div class="emoji-card" id="carta-emoji">🐭</div>
+        <div class="palavra-alvo" id="carta-palavra">RATO</div>
+
+        <button class="btn-audio" onclick="falarPalavra()">🔊 Ouvir pronúncia</button>
+
+        <p class="instrucao">Peça para a criança repetir e valide abaixo:</p>
+
+        <div class="controles-adulto">
+            <button class="btn-acao btn-repetir" onclick="registrarResposta(false)">🔄 Tentar de novo</button>
+            <button class="btn-acao btn-acertou" onclick="registrarResposta(true)">⭐ Acertou!</button>
+        </div>
+
+        <button class="btn-voltar" onclick="voltarMenu()">← Escolher outro som</button>
+    </section>
+
+    <!-- TELA 3: RELATÓRIO FINAL -->
+    <section id="tela-fim" class="container oculto">
+        <div class="trofeu">🏆</div>
+        <h2>Parabéns pelo treino!</h2>
+        <p class="subtitulo">Mostre este resumo na próxima consulta:</p>
+
+        <div class="resumo-box" id="texto-relatorio"></div>
+
+        <button class="btn-fonema full" onclick="voltarMenu()">Voltar ao Início</button>
+    </section>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
