@@ -55,9 +55,9 @@ h2 { margin-bottom: 10px; font-size: 1.3rem; }
     background: var(--primaria);
     color: white;
     border: none;
-    padding: 22px 15px;
+    padding: 20px 15px;
     border-radius: 16px;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -66,7 +66,11 @@ h2 { margin-bottom: 10px; font-size: 1.3rem; }
 .btn-fonema.verde { background: #059669; }
 .btn-fonema.laranja { background: #D97706; }
 .btn-fonema.roxo { background: #7C3AED; }
+.btn-fonema.azul { background: #0284C7; }
+.btn-fonema.rosa { background: #DB2777; }
+.btn-fonema.ciano { background: #0D9488; }
 .btn-fonema.full { width: 100%; }
+.btn-fonema.full-grid { grid-column: span 2; }
 
 .oculto { display: none !important; }
 .emoji-card { font-size: 5.5rem; margin: 15px 0; background: #EEF2FF; border-radius: 20px; padding: 20px; }

@@ -20,7 +20,7 @@
         
         <div class="grid-fonemas">
             <button class="btn-fonema" onclick="iniciarTreino('R')">
-                Som do R <span>Rato, Arara, Robô</span>
+                Som do R <span>Rato, Arara, Carro</span>
             </button>
             <button class="btn-fonema verde" onclick="iniciarTreino('L')">
                 Som do L <span>Leão, Bola, Lua</span>
@@ -31,6 +31,15 @@
             <button class="btn-fonema roxo" onclick="iniciarTreino('TR')">
                 Encontros (TR/PR) <span>Trem, Prato, Estrela</span>
             </button>
+            <button class="btn-fonema azul" onclick="iniciarTreino('FV')">
+                Sons F / V <span>Foca, Vaca, Foguete</span>
+            </button>
+            <button class="btn-fonema rosa" onclick="iniciarTreino('CHX')">
+                Sons CH / X <span>Chave, Peixe, Abacaxi</span>
+            </button>
+            <button class="btn-fonema ciano full-grid" onclick="iniciarTreino('LHNH')">
+                Sons LH / NH <span>Coelho, Galinha, Abelha</span>
+            </button>
         </div>
 
         <button class="btn-voltar" onclick="zerarProgresso()">Zerar estrelas salvas</button>
@@ -38,7 +47,7 @@
 
     <!-- TELA 2: ÁREA DO EXERCÍCIO -->
     <section id="tela-jogo" class="container oculto">
-        <p class="subtitulo" id="progresso-texto">Palavra 1 de 3</p>
+        <p class="subtitulo" id="progresso-texto">Palavra 1 de 6</p>
         
         <div class="emoji-card" id="carta-emoji">🐭</div>
         <div class="palavra-alvo" id="carta-palavra">RATO</div>
