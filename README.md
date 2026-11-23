@@ -8,8 +8,9 @@ Auxiliar fonoaudiólogos, pais e crianças no treino domiciliar de exercícios d
 ## ✨ Funcionalidades
 * **Catálogo Amplo por Fonemas (42 exercícios):** Atividades divididas em 7 grupos de sons essenciais na terapia infantil (`/R/`, `/L/`, `/S/`, encontros consonantais `TR/PR`, `F/V`, `CH/X` e `LH/NH`), trabalhando os fonemas no início e no meio das palavras.
 * **Suporte de Áudio Nativo:** Pronúncia automatizada em português (`pt-BR`) utilizando a *Web Speech API* para servir de modelo auditivo à criança.
+* **Validação Assistida e Lúdica:** Três opções de controle para o adulto/profissional (**⭐ Acertou**, **🔄 Repetir** e **⏭️ Pular**), mantendo o treino leve e sem frustrações para a criança.
 * **Gamificação:** Sistema de recompensa por estrelas salvo automaticamente no dispositivo (`LocalStorage`).
-* **Relatório de Sessão:** Resumo gerado ao final de cada treino (data, fonema, acertos e tentativas) para acompanhamento da evolução pelo fonoaudiólogo.
+* **Relatório de Sessão:** Resumo gerado ao final de cada treino contendo data, fonema trabalhado, quantidade de acertos, palavras puladas e a lista exata de **palavras para reforçar** na próxima consulta.
 
 ## 🛠️ Tecnologias Utilizadas
 * **HTML5** (Estrutura semântica)
@@ -24,7 +25,8 @@ Acesse a aplicação funcionando diretamente pelo navegador (celular ou computad
 * `index.html` — Estrutura das telas (Menu de Fonemas, Área de Exercício e Relatório Final).
 * `style.css` — Estilização visual, cores e responsividade.
 * `dados.js` — Banco de dados com 42 palavras e emojis organizados em 7 categorias fonéticas.
-* `app.js` — Lógica de navegação, síntese de voz, pontuação e geração de relatório.
+* `app.js` — Lógica de navegação, síntese de voz, pontuação e geração de relatório diagnóstico.
 
 ## 👨‍💻 Autor
 Desenvolvido por **Marcio** ([@Marcioeng7](https://github.com)) — Estudante de Análise e Desenvolvimento de Sistemas (2º Período).
+
