@@ -60,7 +60,7 @@ function registrarResposta(status) {
         puladasSessao++;
         palavrasPuladas.push(palavraAtual);
         avancarPalavra();
-    } else {
+    } else if (status === 'repetir') {
         falarPalavra();
     }
 }
