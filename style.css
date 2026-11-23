@@ -2,6 +2,7 @@
     --primaria: #4F46E5;
     --secundaria: #10B981;
     --alerta: #F59E0B;
+    --erro: #EF4444;
     --fundo: #F3F4F6;
     --card: #FFFFFF;
     --texto: #1F2937;
@@ -88,9 +89,10 @@ h2 { margin-bottom: 10px; font-size: 1.3rem; }
     margin-bottom: 25px;
 }
 
-.controles-adulto { border-top: 1px solid #E5E7EB; padding-top: 20px; display: flex; gap: 12px; }
-.btn-acao { flex: 1; padding: 15px; border: none; border-radius: 12px; font-size: 1rem; font-weight: bold; cursor: pointer; color: white; }
-.btn-acertou { background: var(--secundaria); }
+.controles-adulto { border-top: 1px solid #E5E7EB; padding-top: 20px; display: flex; gap: 8px; }
+.btn-acao { flex: 1; padding: 14px 8px; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: bold; cursor: pointer; color: white; }
+.btn-pular { background: #64748B; }
 .btn-repetir { background: var(--alerta); }
+.btn-acertou { background: var(--secundaria); }
 .btn-voltar { margin-top: 20px; background: none; border: none; color: #6B7280; text-decoration: underline; cursor: pointer; }
 .resumo-box { background: #F9FAFB; padding: 15px; border-radius: 12px; margin: 15px 0; text-align: left; line-height: 1.6; }

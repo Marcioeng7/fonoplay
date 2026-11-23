@@ -56,9 +56,10 @@
 
         <p class="instrucao">Peça para a criança repetir e valide abaixo:</p>
 
-        <div class="controles-adulto">
-            <button class="btn-acao btn-repetir" onclick="registrarResposta(false)">🔄 Tentar de novo</button>
-            <button class="btn-acao btn-acertou" onclick="registrarResposta(true)">⭐ Acertou!</button>
+                <div class="controles-adulto">
+            <button class="btn-acao btn-pular" onclick="registrarResposta('pular')">⏭️ Pular</button>
+            <button class="btn-acao btn-repetir" onclick="registrarResposta('repetir')">🔄 Repetir</button>
+            <button class="btn-acao btn-acertou" onclick="registrarResposta('acertou')">⭐ Acertou</button>
         </div>
 
         <button class="btn-voltar" onclick="voltarMenu()">← Escolher outro som</button>
